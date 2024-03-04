@@ -1,0 +1,296 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]MFestApp</title>
+    <!-- burada css,bootstrap,font-awesome projemize import edildi.-->
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/Style.css" asp-append-version="true" />
+     <link rel="stylesheet" href="~/MFestProject.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <!-- bitis -->
+</head>
+<body>
+    <!-- navbar baslangic -->
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-sd navbar-expand-md navbar-expand-lg navbar-light" style="height:50px;">
+            <a class="navbar-brand" asp-controller="Home" asp-action="Index"><strong><img src="~/img/Logo.png" style="width:200px;height:160px;"/></strong></a>
+    
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Yurtiçi Etkinlikler<span class="fa fa-angle-down"></span></a>
+                        <div class="dropdown-menu" id="dropdown-menu1" aria-labelledby="navbarDropdown1">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="row d-flex tab">
+                                            <div class="text-center d-flex">
+                                                <a class="dropdown-item" href="#">
+                                                    <img class="d-flex" src="~/img/konser2.jpg" style="width:50px;height:50px;border-radius:10px;"/></a>
+                                                   
+                                                 </div>
+                                            <div class="d-flex flex-column">
+                                                <a class="dropdown-item" href="#">
+                                                    <h6 class="mb-0">Konserler</h6>
+                                                   
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row d-flex tab">
+                                            <div class="text-center">
+                                                <a class="dropdown-item" href="#">
+                                                    <img class="d-flex" src="~/img/kamp.jpg" style="width:50px;height:50px;border-radius:10px;"/></a>
+                                            </div>
+                                            <div class="d-flex flex-column">
+                                                <a class="dropdown-item" href="#">
+                                                    <h6 class="mb-0">Kamp</h6>
+                                                  
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="row d-flex tab">
+                                            <div class="text-center">
+                                                <a class="dropdown-item" href="#">
+                                                    <img class="d-flex" src="~/img/gezi.jpg" style="width:50px;height:50px;border-radius:10px;"/></a>
+                                            </div>
+                                            <div class="d-flex flex-column">
+                                                <a class="dropdown-item" href="#">
+                                                    <h6 class="mb-0">Gezi</h6>
+                                                  
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row d-flex tab">
+                                            <div class="text-center">
+                                                <a class="dropdown-item" href="#">
+                                                    <img class="d-flex" src="~/img/tiyatro.jpg" style="width:50px;height:50px;border-radius:10px;"/></a>
+                                            </div>
+                                            <div class="d-flex flex-column">
+                                                <a class="dropdown-item" href="#">
+                                                    <h6 class="mb-0">Tiyatro</h6>
+                                                   
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="row d-flex tab">
+                                            <div class="text-center">
+                                                <a class="dropdown-item" href="#">
+                                                    <img class="d-flex" src="~/img/kayak.jpg" style="width:50px;height:50px;border-radius:10px;"/></a>
+                                            </div>
+                                            <div class="d-flex flex-column">
+                                                <a class="dropdown-item" href="#">
+                                                    <h6 class="mb-0">Kayak</h6>
+                                                   
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row d-flex tab">
+                                            <div class="text-center">
+                                                <a class="dropdown-item" href="#">
+                                                    <img class="d-flex" src="~/img/binicilik.jpg" style="width:50px;height:50px;border-radius:10px;"/></a>
+                                            </div>
+                                            <div class="d-flex flex-column">
+                                                <a class="dropdown-item" href="#">
+                                                    <h6 class="mb-0">Binicilik</h6>
+                                                   
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Festival<span class="fa fa-angle-down"></span></a>
+                        <div class="dropdown-menu" id="dropdown-menu2" aria-labelledby="navbarDropdown2">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="row d-flex tab">
+                                            <div class="text-center">
+                                                <a class="dropdown-item" href="#">
+                                                    <img class="d-flex" src="~/img/gezginfest.jpg" style="width:50px;height:50px;border-radius:10px;"/></a>
+                                            </div>
+                                            <div class="d-flex flex-column">
+                                                <a class="dropdown-item" href="#">
+                                                    <h6 class="mb-0">GezginFest</h6>
+                                                   
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row d-flex tab">
+                                            <div class="text-center">
+                                                <a class="dropdown-item" href="#">
+                                                    <img class="d-flex" src="~/img/istfest.jpg" style="width:50px;height:50px;border-radius:10px;"/></a>
+                                            </div>
+                                            <div class="d-flex flex-column">
+                                                <a class="dropdown-item" href="#">
+                                                    <h6 class="mb-0">İstFest</h6>
+                                                    
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="row d-flex tab">
+                                            <div class="text-center">
+                                                <a class="dropdown-item" href="#">
+                                                    <img class="d-flex" src="~/img/holifest.jpg" style="width:50px;height:50px;border-radius:10px;"/></a>
+                                            </div>
+                                            <div class="d-flex flex-column">
+                                                <a class="dropdown-item" href="#">
+                                                    <h6 class="mb-0">HoliFest</h6>
+                                                    
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row d-flex tab">
+                                            <div class="text-center">
+                                                <a class="dropdown-item" href="#">
+                                                    <img class="d-flex" src="~/img/winterfest.jpg" style="width:50px;height:50px;border-radius:10px;"/></a>
+                                            </div>
+                                            <div class="d-flex flex-column">
+                                                <a class="dropdown-item" href="#">
+                                                    <h6 class="mb-0">WinterFest</h6>
+                                                    
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Yurtdışı Etkinlikler<span class="fa fa-angle-down"></span></a>
+                        <div class="dropdown-menu" id="dropdown-menu3" aria-labelledby="navbarDropdown3">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="row d-flex tab">
+                                            <div class="text-center">
+                                                <a class="dropdown-item" href="#">
+                                                    <img class="d-flex" src="~/img/tomorrowland.jpg" style="width:50px;height:50px;border-radius:10px;"/></a>
+                                            </div>
+                                            <div class="d-flex flex-column">
+                                                <a class="dropdown-item" href="#">
+                                                    <h6 class="mb-0">Tomorrowland-Belçika</h6>
+                                                   
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row d-flex tab">
+                                            <div class="text-center">
+                                                <a class="dropdown-item" href="#">
+                                                    <img class="d-flex" src="~/img/riocarnavali3.jpg" style="width:50px;height:50px;border-radius:10px;"/></a>
+                                            </div>
+                                            <div class="d-flex flex-column">
+                                                <a class="dropdown-item" href="#">
+                                                    <h6 class="mb-0">Rio Karnavalı-Brezilya</h6>
+                                                    
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="row d-flex tab">
+                                            <div class="text-center">
+                                                <a class="dropdown-item" href="#">
+                                                    <img class="d-flex" src="~/img/summerfest.jpg" style="width:50px;height:50px;border-radius:10px;"/></a>
+                                            </div>
+                                            <div class="d-flex flex-column">
+                                                <a class="dropdown-item" href="#">
+                                                    <h6 class="mb-0">SummerFest-ABD</h6>
+                                                    
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row d-flex tab">
+                                            <div class="text-center">
+                                                <a class="dropdown-item" href="#">
+                                                    <img class="d-flex" src="~/img/halftimeshow.jpg" style="width:50px;height:50px;border-radius:10px;"/></a>
+                                            </div>
+                                            <div class="d-flex flex-column">
+                                                <a class="dropdown-item" href="#">
+                                                    <h6 class="mb-0">Halftime Show-ABD</h6>
+                                                    
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li> 
+                    
+                </ul>
+               
+            </div>
+            <div class="navbar-right" id ="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item" > <a class="nav-link" asp-controller="User" asp-action="Login" >Giriş Yap</a></li>
+                    <li class="nav-item" > <a  class="nav-link" asp-controller="Home" asp-action="Cart" >Sepet</a></li>
+    </ul>
+    </div>
+        </nav>
+    </div>
+    <!-- navbar bitis-->
+  
+    <div class="container">
+        <main role="main" class="pb-3">
+           <!-- burada anasayfamız partial olarak tasarlandı. -->
+            @Html.Partial("Herosection")
+            @Html.Partial("Tabcard")
+            @RenderBody()
+            @Html.Partial("Footer")
+        </main>
+    </div>
+
+  
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+   <!--burada script dosyalarımız projemize dahil edildi.-->
+    <script src=" https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+   
+
+
+</body>
+</html>
